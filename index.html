@@ -1,85 +1,127 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Buddhi Rai | Physics | University of Hawaiʻi Maui College</title>
+    <title>Buddhi Rai | Physics | University of Hawaiʻi Maui College</title>
 
-<meta name="description"
-content="Buddhi Rai is a Physics faculty member at the University of Hawaiʻi Maui College. Academic website featuring teaching, physics education, research, student mentoring, STEM projects, publications, and professional activities." />
+    <meta name="description"
+          content="Buddhi Rai is an Associate Professor of Physics at the University of Hawaiʻi Maui College. Academic website featuring teaching, physics education, research, student mentoring, STEM projects, publications, and professional activities.">
 
-<meta name="keywords"
-content="Buddhi Rai, Buddhi, Physics, University of Hawaii Maui College, UH Maui College, physics education, student research, STEM, solar energy research" />
+    <link rel="canonical" href="https://buddhirai.github.io/">
 
-<link rel="canonical" href="https://buddhirai.github.io/" />
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "mainEntity": {
-    "@type": "Person",
-    "name": "Buddhi Rai",
-    "url": "https://buddhirai.github.io/",
-    "jobTitle": "Associate Professor of Physics",
-    "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "University of Hawaiʻi Maui College"
+    <!-- Structured data for Buddhi Rai -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Buddhi Rai",
+        "url": "https://buddhirai.github.io/",
+        "jobTitle": "Associate Professor of Physics",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Hawaiʻi Maui College"
+        }
+      }
     }
-  }
-}
-</script>
+    </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Buddhi Rai",
-  "alternateName": "Buddhi Rai Academic Website",
-  "url": "https://buddhirai.github.io/"
-}
-</script>
+    <!-- Structured data for the website -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Buddhi Rai",
+      "alternateName": "Buddhi Rai Academic Website",
+      "url": "https://buddhirai.github.io/"
+    }
+    </script>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .site-container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .navigation {
+            width: 360px;
+            min-width: 360px;
+            height: 100vh;
+            border: none;
+        }
+
+        .main-content {
+            flex: 1;
+            height: 100vh;
+            border: none;
+        }
+
+        /* Search-engine-readable information about the homepage */
+        .site-information {
+            position: absolute;
+            left: -10000px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+    </style>
 
 </head>
 
-<frameset cols="360px,*">
-
-<frame noresize="noresize"
-       name="contents"
-       src="mycontents.html" />
-
-<frame src="mainpage_wrapper_scroll.html"
-       name="showframe" />
-
-<noframes>
-
 <body>
 
-<h1>Buddhi Rai</h1>
+    <!--
+       Basic information about this website is part of index.html itself.
+       The visible academic homepage is displayed below.
+    -->
+    <div class="site-information">
+        <h1>Buddhi Rai</h1>
 
-<h2>Physics | University of Hawaiʻi Maui College</h2>
+        <p>
+            Buddhi Rai is an Associate Professor of Physics at the
+            University of Hawaiʻi Maui College. His academic work includes
+            physics teaching, physics education, student research,
+            STEM education, research, mentoring, and professional activities.
+        </p>
 
-<p>
-Welcome to the academic website of Buddhi Rai, Associate Professor of Physics
-at the University of Hawaiʻi Maui College. My academic work includes physics
-education, student research, STEM education and mentoring, renewable energy
-research, and interdisciplinary science projects.
-</p>
+        <p>
+            This is the academic website of Buddhi Rai.
+        </p>
+    </div>
 
-<p>
-<a href="mainpage_wrapper_scroll.html">Buddhi Rai Academic Homepage</a>
-</p>
 
-<p>
-<a href="mycontents.html">Teaching, Research, and Professional Activities</a>
-</p>
+    <div class="site-container">
+
+        <!-- Existing left navigation page -->
+        <iframe
+            class="navigation"
+            src="mycontents.html"
+            title="Buddhi Rai Website Navigation">
+        </iframe>
+
+        <!-- Existing main homepage -->
+        <iframe
+            class="main-content"
+            src="mainpage_wrapper_scroll.html"
+            name="showframe"
+            title="Buddhi Rai Academic Homepage">
+        </iframe>
+
+    </div>
 
 </body>
-
-</noframes>
-
-</frameset>
 
 </html>
