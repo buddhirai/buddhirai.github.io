@@ -83,6 +83,130 @@
         }
 
 
+
+
+
+
+    /* =========================================================
+   MOBILE PHONE DISPLAY
+   Keeps desktop/laptop appearance unchanged
+   ========================================================= */
+
+@media screen and (max-width: 700px) {
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Keep the rectangular main-page frame inside phone screen */
+    .wrapper {
+        width: calc(100% - 10px);
+        max-width: calc(100% - 10px);
+        margin: 5px;
+        padding: 12px;
+        height: auto;
+        min-height: calc(100vh - 10px);
+        overflow-x: hidden;
+        border-radius: 18px;
+    }
+
+    .content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    /* Homepage heading */
+    .greeting {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 1.25em;
+    }
+
+    /* Remove desktop-only left shift */
+    .shift-left {
+        margin-left: 0;
+    }
+
+    /* Profile section becomes vertical on a phone */
+    .profile-table {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+    }
+
+    .profile-table tbody,
+    .profile-table tr,
+    .profile-table td {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .profile-table td {
+        text-align: center;
+    }
+
+    /* Profile photograph */
+    .homepage-image {
+        display: block;
+        width: auto;
+        max-width: 70%;
+        height: auto;
+        max-height: 150px;
+        margin: 12px auto;
+    }
+
+    /* Professional information below photograph */
+    .profile-info {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        overflow-wrap: anywhere;
+    }
+
+    .profile-info div {
+        text-align: center !important;
+        line-height: 1.4;
+    }
+
+    /* Long website/email addresses must stay inside frame */
+    a {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    /* Lists fit comfortably inside the rectangular frame */
+    ul {
+        padding-left: 25px;
+        padding-right: 5px;
+        margin-left: 0;
+    }
+
+    li {
+        overflow-wrap: break-word;
+    }
+
+    /* General protection against oversized images */
+    img {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+        
     </style>
 
 
