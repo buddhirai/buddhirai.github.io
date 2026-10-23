@@ -327,8 +327,11 @@
 
 
 
-        
 
+
+
+
+        
 
 // Load the correct page into the right panel from the URL hash
 function loadPageFromHash() {
@@ -336,7 +339,37 @@ function loadPageFromHash() {
     const hash = window.location.hash.substring(1);
 
     const pages = {
-        "galapagos": "galapagos.html"
+  
+    "home": "mainpage_wrapper_scroll.html",
+
+    "new-updates": "new_updates.html",
+
+    "student-research": "student_research.html",
+
+    "galapagos": "galapagos.html",
+
+    "nepal-travel": "nepal_travel_class.html",
+
+    "guest-speakers": "guestspeaker.html",
+
+    "graduate-research": "research.html",
+
+    "teaching-assignments": "courses.html",
+
+    "student-evaluations": "evaluation.html",
+
+    "classroom-observation": "observation.html",
+
+    "dissertation-thesis": "DT.html",
+
+    "newton": "Newton.html"
+
+        "music": "music.html"
+        "pictures": "pictures.html"
+        "phrases": "phrases_new.html"
+        "interview": "interview.html"
+
+        
     };
 
     if (pages[hash]) {
@@ -355,6 +388,10 @@ window.addEventListener("hashchange", loadPageFromHash);
 
 
 
+
+
+
+        
 
         
 
