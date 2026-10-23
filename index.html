@@ -325,6 +325,39 @@
 
         }
 
+
+
+        
+
+
+// Load the correct page into the right panel from the URL hash
+function loadPageFromHash() {
+
+    const hash = window.location.hash.substring(1);
+
+    const pages = {
+        "galapagos": "galapagos.html"
+    };
+
+    if (pages[hash]) {
+        document.querySelector(".main-content").src = pages[hash];
+    }
+}
+
+
+// Check the URL when the website first opens
+window.addEventListener("load", loadPageFromHash);
+
+
+// Check again when the hash changes
+window.addEventListener("hashchange", loadPageFromHash);
+
+
+
+
+
+        
+
     </script>
 
 
