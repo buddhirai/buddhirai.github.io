@@ -338,8 +338,9 @@ function loadPageFromHash() {
 
     const hash = window.location.hash.substring(1);
 
-    const pages = {
-  
+    
+const pages = {
+
     "home": "mainpage_wrapper_scroll.html",
 
     "new-updates": "new_updates.html",
@@ -362,15 +363,21 @@ function loadPageFromHash() {
 
     "dissertation-thesis": "DT.html",
 
-    "newton": "Newton.html"
+    "newton": "Newton.html",
 
-        "music": "music.html"
-        "pictures": "pictures.html"
-        "phrases": "phrases_new.html"
-        "interview": "interview.html"
+    "music": "music.html",
+
+    "pictures": "pictures.html",
+
+    "phrases": "phrases_new.html",
+
+    "interview": "interview.html"
+
+};
+
+
 
         
-    };
 
     if (pages[hash]) {
         document.querySelector(".main-content").src = pages[hash];
